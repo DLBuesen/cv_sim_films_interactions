@@ -19,10 +19,10 @@
 - For convenience, Ubuntu 18.04 can be configured to run bash scripts via double-click. However, this is not required for using the app.
 
 # Installing the App
-- Download the project folder from this repositry and unzip to any location on your computer.
-- Run the docker container installation script in the "docker" folder. Signing into your docker account can be done directly during the running of the scripts via keyboard entry if not already done. Any Matlab-based app requires the use of Matlab runtime, which is unfortunately over 9GB in size. Therefore, installation of the container might take as long as 10 minutes.
-- After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values. Verify that the reults match what is presented in the installation video.
-- Change parameters, save, and rerun the simulation, to confirm that the connection to the parameter input export excel files is working. The excel file must be saved each time after a change or the app will not capture it.
+- Download the project folder from this repository and unzip to any location on your computer.
+- Run the docker container installation script in the "docker" folder. Signing into your docker account can be done directly during the running of the scripts via keyboard entry if not already done. Docker container image files can be rather large in size (i.e. 10 GB). Therefore, installation of the container might take as long as 10 minutes.
+- After setting the path for the parameter and data export excel files, run the simulation with the preset parameter values. Verify that the results match what is presented in the installation video.
+- Change parameters, save, and rerun the simulation to confirm that the connection to the parameter input export excel file is working. The excel file must be saved each time after a change or the app will not capture it.
 
 # Uninstalling the App
 - To uninstall, run the uninstallation script in the "containers" folder, and follow the instruction in the prompt to verify that the container has been removed.
