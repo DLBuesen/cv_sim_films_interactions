@@ -1,37 +1,35 @@
 # Introduction
-- Thickness distribution of a redox-active film by means of linear sweep voltammetry for a given set of dimensional parameters (peak currents, concentrations, diffusion coefficient of the electron, etc).
+- Cyclic voltammetry simulation of a redox-active film for a given set of dimensional parameters (concentration, diffusion coefficient of the electron, etc) which includes the effect of interactions between the redox-active moities. 
 - The app is used in the course "Electrobiotechnology", taught by Prof. Dr. Nicolas Plumeré in the Professorship for Electrobiotechnology at the Technical University of Munich, Campus Straubing (TUMCS). A link to the group webpage can be found [here](https://ebt.cs.tum.de/?lang=en). However, the app is freely available for education and research purposes.
 - Docker is used here because our group is currently exploring the possibility of deploying research apps using this platform. An in-depth presentation on this topic can be found [here](https://www.youtube.com/watch?v=L4nqky8qGm8).
 
 # System Description Highlights
-- By means of a series of linear sweep voltammetry experiments, the diffusion layer of the electron transfer within the film is varied. By comparison of this diffusion layer thickness to the external film boundaries, thickness distribution information can be obtained.
-- Film thickness distributions are parameterized by the Weibull distribution. Changing the shape factor changes the entire shape of the resulting distribution, and does not merely make it narrower or wider, or move it to the left or to the right (i.e. the standard deviation and mean parameters of the normal distribution).
-- As an ensemble method which probes the entire electrode surface, a representation of the entire film thickness distribution can be obtained. However, this method cannot determine the spatial positions of film sub-sections or aggregates. Therefore, this method is complementary to Atomic Force or Optical Microscopy, which can show the spatial arrangement and sizes of aggregates, but only for a limited portion of the electrode.
-- Electron transfer within the film must be on the order of the time scale of a linear sweep voltammetry experiments (i.e. redox-hydrogel films); electron transfer within electrically conducting organic polymer films is to fast for use with this method.
-- Counterion transport within the film is assumed to be non-rate limiting.
-- Reversible electron transfer at the electrode (Nernst Equation) is assumed. This method cannot be used for the case of quasi-reveresible electron transfer.
-- A full description of the system is given in the following research [paper](https://pubs.rsc.org/en/content/articlelanding/2020/sc/c9sc03653a#!divAbstract).
+- No reactions, electron transfer in the film by means of hopping, characterized by the diffusion coefficient of the electron.
+- Electron transfer at the electrode surface is characterized by Butler-Volmer kinetics.
+- Can include capacitance contributions to the simulated signal by entering resistance and capacitance parameter values.
+- Interactions within the film are included by means of the interaction parameter "g", based on the Frumkin isotherm. A full description is given in the following [paper]. The default data set that comes with this app is based on figure X in this paper, except for the estimate of the heterogeneous rate constant which is based on a relevant follow-up [paper].
+- Under certain experimental conditions (i.e. low scan-rates, very thin films, etc.), the resulting simulated signal for the film is comparable to that of an adsorbed monolayer. Therefore, if using equivalent values (i.e. equivalent coverage based on concentration multiplied by the film thickness), results can be quantitatively compared to adsorbed monolayer simulations which are described in the following [paper].
+- Some of the plots which are presented in terms of scaled parameters, which are not part of the aforementioned papers; a list of these scaled quantities can be found [here]. However, plots of dimensional current are provided so the use of scaled quantities is not required in order to obtain satisfactory agreement between an imported experimental CV and the simulated CV based on the given set of dimensional parameters.
 
 # App Demonstration Video
-- A demo of the app is shown in a [video](https://vimeo.com/557098624) for running the app on a windows 10 operating system.
+- A demo of the app is shown in a [video] for running the app on a windows 10 operating system.
 
 # Results Obtained
-- Concentration and interaction parameter estimate values via calculations performed by the app.
-- Non-dimensionalization of the user-entered peak currents for a series of scan rates based on end-user inputs, including estimates of average film thickness and the diffusion coefficient of the electron, etc.
-- Automatic overlay of the dimensionless experimental data to results obtained for a series of shape factor values for easy and fast estimation of the film thickness distribution.
-- The ability to fine tune the estimate for the film thickness distribution via custom calculations. 
-- Probability distribution function of the resulting film thickness distribution along with a 3-dimensional representation for easy visualization (remembering that this is only a representation). The data points for the probability distribution function are saved in a newly created data export folder.
-- Calculation of relevant statistics such as relative standard deviation, skewness, and kurtosis.
+- A plot of the spatial grid used for solving can also be obtained for purposes of tuning the solving parameters in order to gain satisfactory accuracy without sacrificing speed.
+- An overlay plot of an imported experimental CV current signal with the simulated CV. This plot is dimensional.
+- A composite overlay plot showing the contributions of faradaic and non-faradaic current (i.e. capactiive current). This is a panel figure with the dimensional and dimensionless versions next to each other.
+- An animated video comprised of the simulated CV on the left side and an overlay plot of the concentration profiles on the right side. This is saved as an mp4 file in the user folder (i.e. ubuntu1804 or windows10). This is a plot of dimensionless current and concentrations.
+- Current-potential data (dimensional and dimensionless) for the simulated CV, exported to an Excel file in the user folder (i.e. ubuntu1804 or windows10).
+- A collection of calculated parameters useful for comparison to adsorbed monolayers (i.e. equivalent coverage, calculation of current scaling factor psi for the adsorbed monolayer system, etc.)
+- The aforementioned plots can individually be chosen (or not chosen) by making the appropriate selections in the options tab of the parameters file.
 
 # Typical Workflow
 - If applicable, start up prerequiste supporting software (i.e. Docker, XLaunch).
 - Parameters are entered into the included excel file template and saved.
 - When starting the app, the location of the parameter file must be confirmed. This only needs to be done once per session.
-- The data and parameters file is filled out as much as possible to be able to obtain the initial plot.
-- Based on the initial plot, scan-rates are chosen for the estimation of concentration (if applicable) and the interaction parameter. Information for these scan-rates is added to the necessary sheets within the excel workbook.
-- Estimates of concentration (if applicable) and interaction parameter are obtained by the simulation. The value of the interaction parameter is tuned until the left side of the overlay plot aligns.
-- By inspection of the resulting overlay plot, an estimate of the shape factor is already obtained. However, it is also possible to run a series of custom calculations for any specified value of the shape factor if necessary.
-- After finalization of the shape factor value, the distribution, the representation, and the relevant statistics can be readily obtained by pressing the relevant buttons in the app.
+- Data from the experimental CV is copied/pasted into its respective tab of the parameter input file.
+- Dimenaional parameters (i.e. concentration, scan-rate, interaction parameter, etc.) are copied/pasted into its respective tab of the parameter input file.
+- Options related to plots and the solver are indicated in its respective tab of the parameter input file.
 
 # Operating Systems and Installation
 - The app can be run from Windows 10 or from Ubuntu 18.04 LTS.

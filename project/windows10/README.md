@@ -22,19 +22,19 @@
 
 # Installing the App
 - Download the project folder from this repository and unzip to any location on your computer.
-- Close as many programs as possible and use your computer as little as possible during the installation. A restart might be required because a windows specific virtualization process "vmmem" tends to take up nearly all RAM for some reason while the docker image is installed if it is the first time that the image is installed and there are no other similar images already installed. However, after the system is restarted after the installation, the computer RAM usage is once again normal. If your system already has a similar docker container image installed from another similar app, then the installation should not only be very fast, but should also not have vmmem problems, and a restart should not be required.
+- Close as many programs as possible and use your computer as little as possible during the installation. A restart might be required because the windows specific virtualization process "vmmem" will sometimes take up nearly all of the available RAM both during and after the installation, which causes the computer to run slowly. However, this is usually no longer an problem after the computer is restarted after the installation is completed.
 - Verify that docker desktop is running, that you are signed into your docker account, and that docker is set for running linux based containers.
 - Run the docker container installation script in the "containers" folder.
 
 # Running the App and Verifying Correct Installation
-- Start an XLaunch session with access control disabled. Note the display number that is assigned by hovering over the icon after launch (i.e. Desktop-BN8H7BC:0.0 in which case the display is 0.0). Most of the time, the default is 0.0, but not always, so this step is included for robustness. It also allows flexibility for users who have multiple screens, because it allows for the possibility of pointing the output of the app to a screen which is manually assigned while the XLaunch session is started.
+- Start an XLaunch session with access control disabled. Note the last part of the display number that is assigned by hovering over the icon after launch (i.e. Desktop-ABCXYZ:0.0 in which case the display is 0.0). Most of the time, the default is 0.0, but not always, so this step is included for robustness. It also allows flexibility for users who have multiple screens, because it allows for the possibility of pointing the output of the app to a screen which is manually assigned while the XLaunch session is started.
 - Run the launchApp script in the "windows10" folder. Follow the instructions to enter the virtual Ip4 "Ipv4" address for your computer, and enter the display number during the app launch process.
-- After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values. Verify that the resulting plot matches the results shown in the demonstration video.
-- Change one of the parameters, save the Excel file, and rerun the simulation to verify that the result changes. If the Excel file is not saved after changes, then the app will not be able to recognize the changes.
-- Close docker and XLaunch.
+- After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values. Verify that the results match those shown in the demonstration video.
+- Change one of the parameters, save the Excel file, and rerun the simulation to verify that the plots and that the data exported to the export file changes. The parameters Excel file must be saved after making any changes, or they will be recognized by the app.
+- Close Docker Desktop and XLaunch.
 
 # Uninstalling the App
-- Verify that Docker desktop is started any you are logged into your account.
-- Run the uninstallation script in the dockerfolder, and follow the instruction in the prompt to verify that the container has been removed.
+- Verify that Docker Desktop is started any you are logged into your account.
+- Run the uninstallation script in the docker folder, and follow the instruction in the prompt to verify that the container has been removed.
 - Move the project folder to the recycling bin.
-- Close Docker desktop.
+- Close Docker Desktop.
