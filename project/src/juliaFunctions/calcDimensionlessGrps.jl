@@ -1,6 +1,4 @@
-println("Starting to compile JLD package")
 using JLD
-println("JLD package compiled")
 
 function calcDimensionlessGrps()
 
@@ -30,8 +28,6 @@ function calcDimensionlessGrps()
 		k0_cm = load("$exptlParamsFileNameAndPath", "k0_cm")
 		Alpha = load("$exptlParamsFileNameAndPath", "Alpha")
 
-		#g = load("$exptlParamsFileNameAndPath", "g")
-		#gLaviron = load("$exptlParamsFileNameAndPath", "gLaviron")
 		gBard = load("$exptlParamsFileNameAndPath", "gBard")
 
 		Ei_mV = load("$exptlParamsFileNameAndPath", "Ei_mV")
@@ -67,7 +63,6 @@ function calcDimensionlessGrps()
 	# Calculation of the reference current (Semi-Infinite)
 
 			Part1 = 0.4463*FarConst_uA*discArea_cm2*Ptot_cm3*sqrt(Dp_cm2_s)*sqrt(scanRate_mVps) ;
-			#Part1 = FarConst_uA*discArea_cm2*Ptot_cm3*sqrt(Dp_cm2_s)*sqrt(scanRate_mVps) ;
 			Part2 = sqrt(RTdivF_mV) ;
 
 		refCurrent_uA = (Part1)/(Part2) ;
@@ -101,8 +96,6 @@ function calcDimensionlessGrps()
 	   Part1 = filmThickness_cm*sqrt(scanRate_mVps) ;
 	   Part2 = sqrt(Dp_cm2_s)*sqrt(RTdivF_mV) ;
 	global wHalf_p = (Part1) / (Part2) ;
-	# println("wHalf_p = $wHalf_p")
-	# sleep(5)
 
 	   Part1 = filmThickness_cm*sqrt(scanRate_mVps) ;
 	   Part2 = sqrt(Dy_cm2_s)*sqrt(RTdivF_mV) ;

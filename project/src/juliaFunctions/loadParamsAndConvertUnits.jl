@@ -29,8 +29,6 @@ function loadParamsAndConvertUnits()
     k0_cm = XLSX.readdata(paramsFilePath, "ExptlParams", "B4") ;
 
     Alpha = XLSX.readdata(paramsFilePath, "ExptlParams", "B5") ;
-    println("Alpha = $Alpha")
-    sleep(5)
 
 #-----
 

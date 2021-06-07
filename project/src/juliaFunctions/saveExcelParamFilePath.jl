@@ -16,7 +16,7 @@ function saveExcelParamFilePath(varsFromJS)
 
     if isdir("$tempSubFolder")==false
       mkdir("$tempSubFolder")
-      display("Creating temp folder!")
+      display("Creating temp folder")
     else isdir("$tempSubFolder")==true
       display("temp folder already exists!")
     end

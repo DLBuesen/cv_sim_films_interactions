@@ -143,7 +143,7 @@ include("juliaFunctions/createWindow.jl")
         include("juliaFunctions/plotting/compositeCVPanelFigure.jl")
 
         Blink.handlers(mainWindow)["runSimButton_Blink"] = function (n)
-                                                          println("runSimButton_Blink Handler Reached!")
+                                                          # println("runSimButton_Blink Handler Reached")
                                                           loadExpData()
                                                           loadParamsAndConvertUnits()
                                                           gridPlotOption,animationOption,expSimOverlayPlotOption,compositeCVoption = loadOptions()
