@@ -40,6 +40,6 @@
 - Additional installation instructions which are operating system specific can be found within this project for [Windows 10](https://github.com/DLBuesen/redox-active-film-distribution-reversible/tree/main/project/windows10) and for [Ubuntu 18.04](https://github.com/DLBuesen/redox-active-film-distribution-reversible/tree/main/project/ubuntu1804).
 
 # License
-- This app was made using Matlab with an education and research license. Therefore, use of the app must be within the scope of this license.
+- This app was made using free open source software (Julia programming language). Therefore, usage is not restricted to teaching and research purposes.
 
 
