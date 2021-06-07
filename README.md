@@ -24,12 +24,11 @@
 - The aforementioned plots can individually be chosen (or not chosen) by making the appropriate selections in the options tab of the parameters file.
 
 # Typical Workflow
-- If applicable, start up prerequiste supporting software (i.e. Docker, XLaunch).
-- Parameters are entered into the included excel file template and saved.
-- When starting the app, the location of the parameter file must be confirmed. This only needs to be done once per session.
 - Data from the experimental CV is copied/pasted into its respective tab of the parameter input file.
 - Dimenaional parameters (i.e. concentration, scan-rate, interaction parameter, etc.) are copied/pasted into its respective tab of the parameter input file.
 - Options related to plots and the solver are indicated in its respective tab of the parameter input file.
+- If applicable, start up prerequiste supporting software (i.e. Docker, XLaunch).
+- When starting the app, the location of the parameter file must be confirmed. This only needs to be done once per session.
 
 # Operating Systems and Installation
 - The app can be run from Windows 10 or from Ubuntu 18.04 LTS.
