@@ -1,0 +1,71 @@
+* {
+	color: #1D3557;
+	background-color:lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+h1 {
+	color: #1e2cac;
+}
+
+body {
+	background-color: #F1FAEE;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formatting the html form browse button is very difficult and tricky, after trial and error and reading posts on forums I was able to arrive at something reasonable, though I couldn't format it completely. Some of the instructions below might overlap and so it can probably be styled with fewer lines of code when used again in another project. */
+
+button {
+	background-color: #457B9D;
+	color: white;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+
+	/* The margin property isn't fully reset, so it has to be here in order for the julia results and the live editor results to agree */
+	margin: 10px;
+}
+
+button:hover {
+	color: #1D3557;
+	/* color: #e74c3c; */
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+
+	/* The margin property isn't fully reset, so it has to be here in order for the julia results and the live editor results to agree */
+	margin: 10px;
+}
+
+.browseButton {
+	border: 2px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+form label, form button {
+	background-color: #457B9D;
+	color:white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	height: 30px;
+	width: 130px;
+  }
+
+  form label:hover, form button:hover {
+	background-color: #457B9D;
+	color: black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px black solid;
+	font-size: 1.0rem;
+	height: 30px;
+	width: 130px;
+  }
+
+

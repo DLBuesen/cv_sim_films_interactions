@@ -1,0 +1,36 @@
+
+.grid {
+	display: grid;
+	grid-template-columns: 					1fr ;
+	grid-template-rows:						2fr
+											1fr
+											1fr
+											1fr ;
+	grid-template-areas:
+	"title"
+	"filePathButton"
+	"runSimButton"
+	"closeAppButton"
+}
+
+.title {
+	grid-area: title;
+	justify-self: center;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.filePathButton {
+	grid-area: filePathButton;
+	justify-self: center;
+}
+
+.runSimButton {
+	grid-area: runSimButton;
+	justify-self: center;
+}
+
+.closeAppButton {
+	grid-area: closeAppButton;
+	justify-self: center;
+}

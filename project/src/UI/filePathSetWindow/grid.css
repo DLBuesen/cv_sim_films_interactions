@@ -1,0 +1,29 @@
+
+/* a period denotes a class in css */
+
+.container-grid{
+		/* The contents need to be within div tags with the class "container-grid" */
+		display:grid;
+			/* Declaration that we are using css grid */
+		grid-template-columns: 1fr;
+			/* Can also use auto */
+		grid-gap: 10px;
+			/* To define the spacing between rows and columns */
+		grid-template-rows: 70px 1fr;
+}
+
+.instruction{
+	grid-column: 1;
+		/* If there is no stop point, it will stop at the next column  */
+	grid-row: 1;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.fileSelectForm{
+	grid-column: 1;
+	grid-row: 3;
+	text-align: center;
+	align-self: center;
+}
+

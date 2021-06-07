@@ -1,0 +1,45 @@
+* {
+	color: #1D3557;
+	background-color:lightgray;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+	color: #1e2cac;
+}
+
+body {Open Parameter Entry Table
+	background-color: #F1FAEE;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+button {
+	background-color: #457B9D;
+	color: white;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+
+	/* The margin property isn't fully reset, so it has to be here in order for the julia results and the live editor results to agree */
+	margin: 10px;
+}
+
+button:hover {
+	color: black;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px black solid;
+	font-size: 20px;
+
+	/* The margin property isn't fully reset, so it has to be here in order for the julia results and the live editor results to agree */
+	margin: 10px;
+}
+
+input {
+	border: 2px;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+}

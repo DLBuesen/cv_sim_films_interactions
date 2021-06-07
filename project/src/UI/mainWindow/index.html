@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <!-- An error message shows in Electron saying that these aren't loaded, but they are loaded through the julia main script, so they are indeed loaded. -->
+
+  <title></title>
+</head>
+
+<body>
+
+  <div class="grid">
+
+    <div class="title">
+      <h1>Cyclic Voltammetry Simulation</h1>
+        <h2>In Redox Films</h2>
+        <h2>With Interactions</h2>
+    </div>
+
+    <div class="filePathButton"><button id="filePathButton">Set File Path</button></div>
+
+    <div class="runSimButton">
+      <button id="runSimButton" onchanged="runSimButtonClicked()">Run Simulation</button>
+    </div>
+
+    <div class="closeAppButton">
+      <button id="closeAppButton">Close App</button>
+    </div>
+
+  </div>
+
+</body>
+
+<!-- The javascript files cannot be in the head with the CSS ones -->
+<script src="javaScript.js"></script>
+
+</html>

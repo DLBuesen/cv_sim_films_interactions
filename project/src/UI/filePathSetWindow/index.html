@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+
+  <title>Select File</title>
+</head>
+
+<body>
+
+  <div class="container-grid">
+
+    <div class="instruction">
+      <h2>Select Excel Parameter File</h2>
+      <h3>(must be .xlsx)</h3>
+    </div>
+
+    <div class="fileSelectForm">
+
+      <form>
+
+        <div>
+          <input id="browseButton" type="file" name="myfile">
+        </div>
+
+        <div>
+          <button type="reset">Reset Form</button>
+          <!-- The button must be within a form otherwise it won't work -->
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+  
+</body>
+
+<!-- The javascript files cannot be in the head with the CSS ones -->
+<script src="javaScript.js"></script>
+
+</html>
