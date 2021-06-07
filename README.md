@@ -1,6 +1,6 @@
 # Introduction
 - Cyclic voltammetry simulation of a redox-active film for a given set of dimensional parameters (concentration, diffusion coefficient of the electron, etc) which includes the effect of interactions between the redox-active moities. 
-- The app is used in the course "Electrobiotechnology", taught by Prof. Dr. Nicolas Plumeré in the Professorship for Electrobiotechnology at the Technical University of Munich, Campus Straubing (TUMCS). A link to the group webpage can be found [here](https://ebt.cs.tum.de/?lang=en). However, the app is freely available for education and research purposes.
+- The app is used in the course "Electrobiotechnology", taught by Prof. Dr. Nicolas Plumeré in the Professorship for Electrobiotechnology at the Technical University of Munich, Campus Straubing (TUMCS). A link to the group webpage can be found [here](https://ebt.cs.tum.de/?lang=en). The app is freely available and not restricted only for education and research purposes.
 - Docker is used here because our group is currently exploring the possibility of deploying research apps using this platform. An in-depth presentation on this topic can be found [here](https://www.youtube.com/watch?v=L4nqky8qGm8).
 
 # System Description Highlights
