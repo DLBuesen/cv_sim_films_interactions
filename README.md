@@ -17,7 +17,7 @@
 # Results Obtained
 - A plot of the spatial grid used for solving can also be obtained for purposes of tuning the solving parameters in order to gain satisfactory accuracy without sacrificing speed.
 - An overlay plot of an imported experimental CV current signal with the simulated CV. This plot is dimensional.
-- A composite overlay plot showing the contributions of faradaic and non-faradaic current (i.e. capactiive current). This is a panel figure with the dimensional and dimensionless versions next to each other.
+- A composite overlay plot showing the contributions of faradaic and non-faradaic current (i.e. capacitive current). This is a panel figure with the dimensional and dimensionless versions next to each other.
 - An animated video comprised of the simulated CV on the left side and an overlay plot of the concentration profiles on the right side. This is saved as an mp4 file in the user folder (i.e. ubuntu1804 or windows10). This is a plot of dimensionless current and concentrations.
 - Current-potential data (dimensional and dimensionless) for the simulated CV, exported to an Excel file in the user folder (i.e. ubuntu1804 or windows10).
 - A collection of calculated parameters useful for comparison to adsorbed monolayers (i.e. equivalent coverage, calculation of current scaling factor psi for the adsorbed monolayer system, etc.)
