@@ -32,50 +32,50 @@ function loadParamsAndConvertUnits()
 
 #-----
 
-    Ytot_mM = XLSX.readdata(paramsFilePath, "ExptlParams", "B7") ;
+#=     Ytot_mM = XLSX.readdata(paramsFilePath, "ExptlParams", "B7") ;
         Ytot_cm3 = Ytot_mM*(1e-3)*(1e-3) ; # %Conversion to M then to mol*cm-3
 
     Dy_cm2_s = XLSX.readdata(paramsFilePath, "ExptlParams", "B8") ;
 
     k_py_M = XLSX.readdata(paramsFilePath, "ExptlParams", "B9") ;
-        k_py_cm3 = k_py_M*1000 ; # Conversion to mol*cm-3*s-1
+        k_py_cm3 = k_py_M*1000 ; # Conversion to mol*cm-3*s-1 =#
 
 #-----
 
-    Ei_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B11") ;
+    Ei_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B7") ;
 
-    Es_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B12") ;
+    Es_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B8") ;
 
-    Ef_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B13") ;
+    Ef_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B9") ;
 
-    Ep0_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B14") ;
+    Ep0_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B10") ;
 
-    scanRate_mVps = XLSX.readdata(paramsFilePath, "ExptlParams", "B15") ;
+    scanRate_mVps = XLSX.readdata(paramsFilePath, "ExptlParams", "B11") ;
 
 #-----
 
-    filmThickness_um = XLSX.readdata(paramsFilePath, "ExptlParams", "B17") ;
+    filmThickness_um = XLSX.readdata(paramsFilePath, "ExptlParams", "B13") ;
         filmThickness_cm = filmThickness_um*(1e-6)*(1e2) ;
 
-    discArea_cm2 = XLSX.readdata(paramsFilePath, "ExptlParams", "B18") ;
+    discArea_cm2 = XLSX.readdata(paramsFilePath, "ExptlParams", "B14") ;
 
-    Temp_C = XLSX.readdata(paramsFilePath, "ExptlParams", "B19") ;
+    Temp_C = XLSX.readdata(paramsFilePath, "ExptlParams", "B15") ;
           Temp_K = Temp_C + 273.15 ; # Temperature in Kelvin
 
     # Solution resistance
 
-    Rs_GOhm = XLSX.readdata(paramsFilePath, "ExptlParams", "B21") ;
+    Rs_GOhm = XLSX.readdata(paramsFilePath, "ExptlParams", "B17") ;
         Rs_Ohm = (1e9)*Rs_GOhm ; # [=] Ohm, Ohm = V*A^-1
 
     # Double layer capacitance
 
-    Cd_pF = XLSX.readdata(paramsFilePath, "ExptlParams", "B22") ;
+    Cd_pF = XLSX.readdata(paramsFilePath, "ExptlParams", "B18") ;
         Cd_F = Cd_pF*(1e-12) ; # [=] Farads, F = A*s*V^-1
         Cd_uA_mV = Cd_pF ; # [=] uA*s-1*mV-1
 
     # Interaction parameter
 
-    gBard = XLSX.readdata("$paramsFilePath", "ExptlParams", "B24") ;
+    gBard = XLSX.readdata("$paramsFilePath", "ExptlParams", "B20") ;
 
 
  # Save the initial plot variables in a jld file for later use
@@ -86,9 +86,6 @@ function loadParamsAndConvertUnits()
               write(file, "Dp_cm2_s", Dp_cm2_s)
               write(file, "k0_cm", k0_cm)
               write(file, "Alpha", Alpha)
-              write(file, "Ytot_cm3", Ytot_cm3)
-              write(file, "Dy_cm2_s", Dy_cm2_s)
-              write(file, "k_py_cm3", k_py_cm3)
               write(file, "Ei_mV", Ei_mV)
               write(file, "Es_mV", Es_mV)
               write(file, "Ef_mV", Ef_mV)

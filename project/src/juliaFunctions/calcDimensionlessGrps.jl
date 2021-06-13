@@ -14,12 +14,8 @@ function calcDimensionlessGrps()
     	FarConst_uA = load("$exptlParamsFileNameAndPath", "FarConst_uA")
 
     	Ptot_cm3 = load("$exptlParamsFileNameAndPath", "Ptot_cm3")
-        Ytot_cm3 = load("$exptlParamsFileNameAndPath", "Ytot_cm3")
-
-		k_py_cm3 = load("$exptlParamsFileNameAndPath", "k_py_cm3")
 
 		Dp_cm2_s = load("$exptlParamsFileNameAndPath", "Dp_cm2_s")
-		Dy_cm2_s = load("$exptlParamsFileNameAndPath", "Dy_cm2_s")
 
 		discArea_cm2 = load("$exptlParamsFileNameAndPath", "discArea_cm2")
 
@@ -97,10 +93,6 @@ function calcDimensionlessGrps()
 	   Part2 = sqrt(Dp_cm2_s)*sqrt(RTdivF_mV) ;
 	global wHalf_p = (Part1) / (Part2) ;
 
-	   Part1 = filmThickness_cm*sqrt(scanRate_mVps) ;
-	   Part2 = sqrt(Dy_cm2_s)*sqrt(RTdivF_mV) ;
-	wHalf_y = (Part1) / (Part2) ;
-
 	tauCap = 3*RsCd_s/refTime_s ;
 
 	zetaCap = scanRate_mVps*Cd_uA_mV/refCurrent_uA ;
@@ -112,14 +104,6 @@ function calcDimensionlessGrps()
 	Epsilon_pi = (Ei_mV-Ep0_mV)/Eref_mV ;
 	Epsilon_ps = (Es_mV-Ep0_mV)/Eref_mV ;
 	Epsilon_pf = (Ef_mV-Ep0_mV)/Eref_mV ;
-
-	   Part1 = (k_py_cm3)*(Ptot_cm3)*(Ytot_cm3) ;
-	   Part2 = (Ptot_cm3)*(Dp_cm2_s/(filmThickness_cm^2)) ;
-	kappa_py_p = Part1/Part2 ;
-
-	   Part1 = (k_py_cm3)*(Ptot_cm3)*(Ytot_cm3) ;
-	   Part2 = (Ytot_cm3)*(Dy_cm2_s/(filmThickness_cm^2)) ;
-	kappa_py_y = Part1/Part2 ;
 
 # Calculation of time related parameters
 
@@ -147,7 +131,6 @@ function calcDimensionlessGrps()
 		write(file, "Xi400", Xi400)
 		write(file, "refTime_s", refTime_s)
 		write(file, "wHalf_p", wHalf_p)
-		write(file, "wHalf_y", wHalf_y)
 		write(file, "tauCap", tauCap)
 		write(file, "zetaCap", zetaCap)
 		write(file, "phiP", phiP)
@@ -155,8 +138,6 @@ function calcDimensionlessGrps()
 		write(file, "Epsilon_pi", Epsilon_pi)
 		write(file, "Epsilon_ps", Epsilon_ps)
 		write(file, "Epsilon_pf", Epsilon_pf)
-		write(file, "kappa_py_p", kappa_py_p)
-		write(file, "kappa_py_y", kappa_py_y)
 		write(file, "t_tot", t_tot)
 		write(file, "t_fwd", t_fwd)
 		write(file, "t_sw", t_sw)
@@ -176,18 +157,16 @@ function calcDimensionlessGrps()
 # Return values that are needed
 
 	return scanRate_mVps,FarConst_uA,
-	Ptot_cm3,Ytot_cm3,k_py_cm3,
-	Dp_cm2_s,Dy_cm2_s,
+	Ptot_cm3,
+	Dp_cm2_s,
 	discArea_cm2,filmThickness_cm,
 	k0_cm,Alpha,
 	Ei_mV,Es_mV,Ef_mV,Ep0_mV,
-	Rs_Ohm,Cd_F,Cd_uA_mV,RsCd_s,maxCapCurrent_uA,
 	Temp_K,RTdivF_mV,
 	refCurrent_uA,Xi400,refTime_s,
-	wHalf_p,wHalf_y,
+	wHalf_p,
 	tauCap,zetaCap,
 	phiP,Eref_mV,Epsilon_pi,Epsilon_ps,Epsilon_pf,
-	kappa_py_p,kappa_py_y,
 	t_tot,t_fwd,t_sw,t_rev,
 	t_tot_s,t_fwd_s,t_sw_s,t_rev_s,gBard,refCurrent_AdsMono_uA,Gamma_pmol_cm2,G_Laviron,peakPotentialLaviron_mV,psiLaviron_uA
 

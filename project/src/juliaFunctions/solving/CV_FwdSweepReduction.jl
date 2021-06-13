@@ -25,20 +25,18 @@ function CV_FwdSweepReduction()
 # Calculate dimensionless groups
 
 scanRate_mVps,FarConst_uA,
-Ptot_cm3,Ytot_cm3,k_py_cm3,
-Dp_cm2_s,Dy_cm2_s,
-discArea_cm2,filmThickness_cm,
-k0_cm,Alpha,
-Ei_mV,Es_mV,Ef_mV,Ep0_mV,
-Rs_Ohm,Cd_F,Cd_uA_mV,RsCd_s,maxCapCurrent_uA,
-Temp_K,RTdivF_mV,
-refCurrent_uA,Xi400,refTime_s,
-wHalf_p,wHalf_y,
-tauCap,zetaCap,
-phiP,Eref_mV,Epsilon_pi,Epsilon_ps,Epsilon_pf,
-kappa_py_p,kappa_py_y,
-t_tot,t_fwd,t_sw,t_rev,
-t_tot_s,t_fwd_s,t_sw_s,t_rev_s,gBard,refCurrent_AdsMono_uA,Gamma_pmol_cm2,G_Laviron,peakPotentialLaviron_mV,psiLaviron_uA = calcDimensionlessGrps()
+	Ptot_cm3,
+	Dp_cm2_s,
+	discArea_cm2,filmThickness_cm,
+	k0_cm,Alpha,
+	Ei_mV,Es_mV,Ef_mV,Ep0_mV,
+	Temp_K,RTdivF_mV,
+	refCurrent_uA,Xi400,refTime_s,
+	wHalf_p,
+	tauCap,zetaCap,
+	phiP,Eref_mV,Epsilon_pi,Epsilon_ps,Epsilon_pf,
+	t_tot,t_fwd,t_sw,t_rev,
+	t_tot_s,t_fwd_s,t_sw_s,t_rev_s,gBard,refCurrent_AdsMono_uA,Gamma_pmol_cm2,G_Laviron,peakPotentialLaviron_mV,psiLaviron_uA = calcDimensionlessGrps()
 
 
 		# Grid options
@@ -92,7 +90,7 @@ t_tot_s,t_fwd_s,t_sw_s,t_rev_s,gBard,refCurrent_AdsMono_uA,Gamma_pmol_cm2,G_Lavi
 
 			# Populate ODE coefficients for Pox
 
-			P_ODE = Pox_ODE_Coefficients(P_ODE,h,numPts,wHalf_p,Xi400,Alpha,Eref_mV,RTdivF_mV,phiP,kappa_py_p,gBard) ;
+			P_ODE = Pox_ODE_Coefficients(P_ODE,h,numPts,wHalf_p,Xi400,Alpha,Eref_mV,RTdivF_mV,phiP,gBard) ;
 
 #----------------------------------------------------------------------------#
 

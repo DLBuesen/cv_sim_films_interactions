@@ -1,4 +1,4 @@
-function Pox_ODE_Coefficients(P_ODE,h,numPts,wHalf_p,Xi400,Alpha,Eref_mV,RTdivF_mV,phiP,kappa_py_p,gBard)
+function Pox_ODE_Coefficients(P_ODE,h,numPts,wHalf_p,Xi400,Alpha,Eref_mV,RTdivF_mV,phiP,gBard)
 
         # Parameters for the ODEs corresponding to the oxidized form of the redox film mediator (Pox)
 
