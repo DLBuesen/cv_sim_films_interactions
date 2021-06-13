@@ -32,16 +32,6 @@ function loadParamsAndConvertUnits()
 
 #-----
 
-#=     Ytot_mM = XLSX.readdata(paramsFilePath, "ExptlParams", "B7") ;
-        Ytot_cm3 = Ytot_mM*(1e-3)*(1e-3) ; # %Conversion to M then to mol*cm-3
-
-    Dy_cm2_s = XLSX.readdata(paramsFilePath, "ExptlParams", "B8") ;
-
-    k_py_M = XLSX.readdata(paramsFilePath, "ExptlParams", "B9") ;
-        k_py_cm3 = k_py_M*1000 ; # Conversion to mol*cm-3*s-1 =#
-
-#-----
-
     Ei_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B7") ;
 
     Es_mV = XLSX.readdata(paramsFilePath, "ExptlParams", "B8") ;
