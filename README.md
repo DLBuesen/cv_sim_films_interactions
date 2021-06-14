@@ -11,8 +11,10 @@
 - Under certain experimental conditions (i.e. low scan-rates, very thin films, etc.), the resulting simulated signal for the film is comparable to that of an adsorbed monolayer. Therefore, if using equivalent values (i.e. equivalent coverage based on concentration multiplied by the film thickness), results can be quantitatively compared to adsorbed monolayer simulations which are described in the following [paper](https://www.sciencedirect.com/science/article/pii/S0022072879801679).
 - Some of the plots which are presented in terms of scaled parameters, some of which are not part of the aforementioned papers. However, plots of dimensional current are provided so the use of scaled quantities is not required in order to obtain satisfactory agreement between an imported experimental CV and the simulated CV based on the given set of dimensional parameters. Time is referenced to the time required for a LSV in which the potential is swept +/- 200 mV around the standard potential of the redox couple. Concentration is referenced to its total value regardless of redox form. Space is referenced to the film thickness. Potential difference is referenced to (RT/nF), and current is referenced to the peak current that would be obtained for a reversible wave under semi-infinite conditions.
 
-# App Demonstration Video
-- A demo of the app is shown in a [video] for running the app on a windows 10 operating system.
+# App Demonstration Videos
+- Demonstration videos in which the app is running on a windows 10 operating system are available.
+- A video in which an overview of the app is given can be found [here](https://vimeo.com/562837355).
+- An example showing how exported simulation data can be used for making overlay plots in a separate excel spreadsheet can be found [here].
 
 # Results Obtained
 - A plot of the spatial grid used for solving can also be obtained for purposes of tuning the solving parameters in order to gain satisfactory accuracy without sacrificing speed.
