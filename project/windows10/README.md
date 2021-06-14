@@ -33,10 +33,10 @@
 - Follow the instructions to enter the virtual Ip4 "Ipv4" address for your computer, and enter the display number during the app launch process. This Ip address is the virtual IP address that your computer uses to communicate with docker and is not the IP address that your computer uses for accessing the world wide web.
 - After setting the paths for the parameter and data export excel files, run the simulation with the preset parameter values.  Verify that the resulting plot matches the results shown in the demonstration video.
 - Change one of the parameters, save the Excel file, and rerun the simulation to verify that the result changes. If the Excel file is not saved after changes, then the app will not be able to recognize the changes.
-- Close docker and XLaunch.
+- Close Docker and XLaunch.
 
 # Uninstalling the App
-- Verify that Docker Desktop is started any you are logged into your account.
-- Run the uninstallation script in the docker folder, and follow the instruction in the prompt to verify that the container has been removed.
+- Verify that Docker Desktop is started and that you are logged into your account.
+- Run the uninstallation script in the docker folder, and follow the instructions to verify that the container has been removed.
 - Move the project folder to the recycling bin.
 - Close Docker Desktop.
