@@ -14,7 +14,7 @@
 # App Demonstration Videos
 - Demonstration videos in which the app is running on a windows 10 operating system are available.
 - A video in which an overview of the app is given can be found [here](https://vimeo.com/562837355).
-- An example showing how exported simulation data can be used for making overlay plots in a separate excel spreadsheet can be found [here].
+- An example showing how exported simulation data can be used for making overlay plots in a separate excel spreadsheet can be found [here](https://vimeo.com/562859661).
 
 # Results Obtained
 - A plot of the spatial grid used for solving can also be obtained for purposes of tuning the solving parameters in order to gain satisfactory accuracy without sacrificing speed.
