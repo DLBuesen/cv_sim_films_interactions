@@ -15,8 +15,9 @@
 
 # App Prerequisites
 - Docker engine must be installed to be able to run docker container images. Instructions for installation of docker engine for the ubuntu operating system can be found in the Docker software [documentation](https://docs.docker.com/engine/install/ubuntu/).
+- After the initial installation of Docker engine, it will be necessary to add docker to the sudo group, which will allow Docker commands to be run without the sudo prefix, as described in the Docker [documentation](https://docs.docker.com/engine/install/linux-postinstall/). This can also be done in one command via "sudo usermod -aG docker $USER". A restart is required to register the change before going on to the next steps.
 - Register for a free docker [account](https://www.docker.com/).
-- For convenience, Ubuntu 18.04 can be configured to run bash scripts via double-click. However, this is not required for using the app.
+- For convenience, Ubuntu 18.04 can be configured to run bash scripts via double-click; more details can be found [here](https://askubuntu.com/questions/138908/how-to-execute-a-script-just-by-double-clicking-like-exe-files-in-windows). Otherwise, the bash scripts required for the app must be launched according to your own system settings.
 
 # Installing the App
 - Download the project folder from this repository and unzip to any location on your computer.
