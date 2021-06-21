@@ -7,12 +7,6 @@ echo Should be signed in to dockerhub account.
 
 timeout 3
 
-echo checking login status...
-echo.
-docker login
-
-timeout 3
-
 echo.
 echo For granting the Docker container access to the screen...
 echo XLaunch should be running with "Disable access control" selected.
