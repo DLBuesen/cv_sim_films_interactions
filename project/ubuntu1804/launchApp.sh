@@ -12,5 +12,5 @@ gnome-terminal --tab -- bash -c '\
 	docker login;\
 	echo ;\
 	sleep 3;\
-	xhost + && docker run --rm -ti --entrypoint="/usr/bin/julia-1.4.2/bin/julia" --user nonroot -e DISPLAY=$DISPLAY -e HOME=/home/nonroot -e APP_HOME=/home/nonroot/project -p 127.0.0.1:8000:8000 -v /tmp/.X11-unix:/tmp/.X11-unix -v $XAUTH:/home/nonroot/.Xauthority -v /$(pwd):/home/nonroot/project -w /home/nonroot/project/src dlbuesen/cv_sim_films_interactions:version-1.0-layer07'
+	xhost + && docker run --rm -ti --entrypoint="/usr/bin/julia-1.4.2/bin/julia" --user nonroot -e DISPLAY=$DISPLAY -p 127.0.0.1:8000:8000 -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $(pwd):/home/nonroot/project -w /home/nonroot/project/src dlbuesen/cv_sim_films_interactions:version-1.1-layer07'
 

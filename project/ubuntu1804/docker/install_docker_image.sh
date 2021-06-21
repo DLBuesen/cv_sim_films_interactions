@@ -14,13 +14,13 @@ gnome-terminal --tab -- bash -c '\
 	echo "Installing the docker image...";\
 	echo ;\
 	sleep 3;\
-	docker pull dlbuesen/cv_sim_films_interactions:version-1.0-layer07;\
+	docker pull dlbuesen/cv_sim_films_interactions:version-1.1-layer07;\
 	sleep 3;\
 	echo ;\
 	echo "Confirming installation of the docker image...";\
 	echo ;\
 	sleep 5;\
-	echo "Docker image from repository dlbuesen/cv_sim_films_interactions with tag version-1.0-layer07 should appear in the list of images below";\
+	echo "Docker image from repository "dlbuesen/cv_sim_films_interactions" with tag "version-1.1-layer07" should appear in the list of images below";\
 	echo ;\
 	docker images;\
 	echo ;\

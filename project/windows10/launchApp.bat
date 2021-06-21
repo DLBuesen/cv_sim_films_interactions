@@ -66,4 +66,4 @@ echo.
 
 :: Run the container
 
-docker run --rm -ti --entrypoint="/usr/bin/julia-1.4.2/bin/julia" --user nonroot --env DISPLAY=%IPv4%:%XLaunchScreenID% -e APP_HOME=/home/nonroot/project -p 127.0.0.1:8000:8000 -v "%cd%":/home/nonroot/project -w /home/nonroot/project/src dlbuesen/cv_sim_films_interactions:version-1.0-layer07
+docker run --rm -ti --entrypoint="/usr/bin/julia-1.4.2/bin/julia" --user nonroot --env DISPLAY=%IPv4%:%XLaunchScreenID% -p 127.0.0.1:8000:8000 -v "%cd%":/home/nonroot/project -w /home/nonroot/project/src dlbuesen/cv_sim_films_interactions:version-1.1-layer07
