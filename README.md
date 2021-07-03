@@ -16,6 +16,7 @@
 - Demonstration videos in which the app is running on a windows 10 operating system are available.
 - A video in which an overview of the app is given can be found [here](https://vimeo.com/562837355).
 - An example showing how exported simulation data can be used for making overlay plots in a separate excel spreadsheet can be found [here](https://vimeo.com/562859661).
+- Demo videos of the [installation](https://vimeo.com/562709225), [verification](https://vimeo.com/562719177), and the [uninstallation](https://vimeo.com/562697627) of the app are also available to give a visual impression of what to expect in the process, but it will still be necessary to read the provided documentation.
 
 # Results Obtained
 - A plot of the spatial grid used for solving can also be obtained for purposes of tuning the solving parameters in order to gain satisfactory accuracy without sacrificing speed.
@@ -40,7 +41,6 @@
 - It is recommended that the installation of the prerequisites for this app (Docker and xLaunch) be performed by IT-support personnel or by advanced PC users (i.e. comfortable going into bios to change settings, using the command line, resolution of system-specific issues that might arise via google search and some troubleshooting).
 - Installation and use of the app itself does not require any specialized computer knowledge once the prerequisites are fulfulled.
 - Additional installation instructions which are operating system specific can be found within this project for [Windows 10](https://github.com/DLBuesen/cv_sim_films_interactions/tree/main/project/windows10) and for [Ubuntu 18.04](https://github.com/DLBuesen/cv_sim_films_interactions/tree/main/project/ubuntu1804).
-- Demo videos of the [installation](https://vimeo.com/562709225), [verification](https://vimeo.com/562719177), and the [uninstallation](https://vimeo.com/562697627) of the app are also available to give a visual impression of what to expect in the process, but it will still be necessary to read the provided documentation.
 
 # License
 - This app was made using free open source software (Julia programming language). Therefore, usage is not restricted to teaching and research purposes.
