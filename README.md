@@ -38,7 +38,7 @@
 - The docker image requires use of the host screen infrastructure to show the simple graphical user interface menu and the plots on the screen. Therefore, on Windows 10 systems, installation of XLaunch is required. However, this is not required on Linux 18.04 systems.
 - It is recommended that the installation of the prerequisites for this app (Docker and xLaunch) be performed by IT-support personnel or by advanced PC users (i.e. comfortable going into bios to change settings, using the command line, resolution of system-specific issues that might arise via google search and some troubleshooting).
 - Installation and use of the app itself does not require any specialized computer knowledge once the prerequisites are fulfulled.
-- Additional installation instructions which are operating system specific can be found within this project for [Windows 10](https://github.com/DLBuesen/redox-active-film-distribution-reversible/tree/main/project/windows10) and for [Ubuntu 18.04](https://github.com/DLBuesen/redox-active-film-distribution-reversible/tree/main/project/ubuntu1804).
+- Additional installation instructions which are operating system specific can be found within this project for [Windows 10](https://github.com/DLBuesen/cv_sim_films_interaction/tree/main/project/windows10) and for [Ubuntu 18.04](https://github.com/DLBuesen/cv_sim_films_interaction/tree/main/project/ubuntu1804).
 - Demo videos of the [installation](https://vimeo.com/562709225), [verification](https://vimeo.com/562719177), and the [uninstallation](https://vimeo.com/562697627) of the app are also available to give a visual impression of what to expect in the process, but it will still be necessary to read the provided documentation.
 
 # License
